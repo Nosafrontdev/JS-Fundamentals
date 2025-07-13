@@ -1,8 +1,8 @@
-const Numb = process.argv[2];
-const numb = Number(Numb);
+const arg = process.argv[2];
+const num = Number(arg);
 
-if (!isNaN (numb)){
-    console.log(Math.trunc(numb));
+if (!isNaN(num)) {
+    console.log(`My number : ${Math.trunc(num)}`);
 } else {
     console.log("Not a number");
 }
